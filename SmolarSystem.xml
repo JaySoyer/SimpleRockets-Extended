@@ -38,7 +38,7 @@
          </Planet>
          <Planet name="Smalley&apos;s Comet" gravity="0.010000" radius="5500.0" mapColor="208,35,35" icon="Moon.png" launchEnabled="false" description="It's just a big hunk of ice zipping around the Smolar System.">
             <Orbit w="0.785" e="0.967" prograde="0" a="266284209846.0" v="-2.843225"/>
-            <Terrain maxHeight="160.0" noise="35.0" texture="PlanetCrustHalley.png" color="240,240,240" />
+            <Terrain maxHeight="160.0" minHeight="-1600" noise="35.0" texture="PlanetCrustHalley.png" color="240,240,240" />
          </Planet>         
          <Planet name="Smars" gravity="3.710000" radius="338950.0" mapColor="208,35,35" icon="Mars.png" description="The Red Planet is the 2nd smallest in the Smolar System. It has an extremely thin atmosphere, with only about 1% the surface pressure of what you find on Smearth.">
             <Orbit w="5.001014" e="0.093412" prograde="1" a="22793663700.0" v="1.734006"/>
@@ -50,31 +50,35 @@
             <Terrain maxHeight="5000.0" noise="2.5" texture="PlanetCrustSmupiter.png" color="67,53,41" />
             <Atmosphere height="125000.0" surfacePressure="1.0" graphicType="4" />
             <Children>
-               <Planet name="Ganymede Jr" gravity="1.428000" radius="263410" mapColor="145,130,135" icon="Moon.png" launchEnabled="false" description="The largest moon on the Smolar System.">
-                  <Orbit w="0.0" e="0.0013" prograde="1" a="107040000.0" v="0.5"/>
-                  <Terrain maxHeight="500.0" noise="3.5" texture="PlanetCrustSmoon.png" color="35,35,35" />
+				<Planet name="Io Jr" gravity="1.8" radius="182160" mapColor="241,221,86" icon="Moon.png" launchEnabled="false" description="Beware of volcanic plumes of sulfar and sulfur dioxide.">
+                  <Orbit w="0.2" e="0.004" prograde="1" a="42160000.0" v="2.0"/>
+                  <Terrain maxHeight="450.0" noise="0.5" texture="PlanetCrustTitan.png" color="241,221,86" />
                </Planet>
-               <Planet name="Europa Jr" gravity="1.314" radius="156000" mapColor="195,175,175" icon="Moon.png" launchEnabled="false" description="">
-                  <Orbit w="0.1" e="0.0009" prograde="1" a="67090000.0" v="1.5"/>
-                  <Terrain maxHeight="0.0" noise="0.5" texture="PlanetCrustSmoon.png" color="35,35,35" />
+			   <Planet name="Europa Jr" gravity="1.31" radius="156080" mapColor="153,122,75" icon="Moon.png" launchEnabled="false" description="Smallest of the Galilean satellites. Hypothesized to have an ocean beneath it's ice crust.">
+                  <Orbit w="0.1" e="0.0101" prograde="1" a="67090000.0" v="1.5"/>
+                  <Terrain maxHeight="17.0" noise="0.5" texture="PlanetCrustSmuranus.png" color="0,45,124" />
                </Planet>
-               <Planet name="Io Jr" gravity="1.796" radius="182160" mapColor="211,204,134" icon="Moon.png" launchEnabled="false" description="">
-                  <Orbit w="0.2" e="0.0041" prograde="1" a="42170000.0" v="2.0"/>
-                  <Terrain maxHeight="450.0" noise="0.5" texture="PlanetCrustSmoon.png" color="35,35,35" />
+               <Planet name="Ganymede Jr" gravity="1.43" radius="263120" mapColor="111,101,92" icon="Moon.png" launchEnabled="false" description="The largest moon on the Smolar System and only moon to have a magnetosphere.">
+                  <Orbit w="0.0" e="0.0015" prograde="1" a="107040000.0" v="0.5"/>
+                  <Terrain maxHeight="500.0" noise="3.5" texture="PlanetCrustSmoon.png" color="111,101,92" />
                </Planet>
-               <Planet name="Callisto Jr" gravity="1.235" radius="241030" mapColor="99,121,118" icon="Moon.png" launchEnabled="false" description="">
-                  <Orbit w="0.3" e="0.0074" prograde="1" a="188270000.0" v="2.5"/>
-                  <Terrain maxHeight="650.0" noise="0.5" texture="PlanetCrustSmercury.png" color="27,27,27" />
-               </Planet>
+               <Planet name="Callisto Jr" gravity="1.24" radius="241030" mapColor="57,55,42" icon="Moon.png" launchEnabled="false" description="Just about the same size as Mercury.">
+                  <Orbit w="0.3" e="0.007" prograde="1" a="188270000.0" v="2.5"/>
+                  <Terrain maxHeight="650.0" noise="0.5" texture="PlanetCrustSmercury.png" color="57,55,42" />
+               </Planet> 
             </Children>
          </Planet>
          <Planet name="Smaturn" gravity="10.440000" radius="5823200.0" mapColor="213,213,213" icon="Saturn.png" description="It is the 2nd largest planet and because of its rings, it is considered the most beautiful planet in the Smolar System. It is also a gas giant, but once again we are pretending there is a surface.">
             <Orbit w="5.864533" e="0.054151" prograde="1" a="142672541000.0" v="2.222000"/>
             <Terrain maxHeight="2500.0" noise="2.5" texture="PlanetCrustSmaturn.png" color="64,55,14" />
-            <Atmosphere height="275000.0" surfacePressure="1.0" graphicType="7" />
+            <Atmosphere height="534315.0" surfacePressure="1.0" graphicType="7" />
             <Children>
-               <Planet name="Titan Jr" gravity="1.352" radius="257600" mapColor="254,215,84" icon="Moon.png" launchEnabled="false" description="One of the largest satellites, and the only moon known to have a dense atmosphere.">
-                  <Orbit w="0.0" e="0.0288" prograde="1" a="122187000.0" v="1.0"/>
+				<Planet name="Rhea Jr" gravity="0.265" radius="76333.3" mapColor="206,206,206" icon="Moon.png" launchEnabled="false" description="An icy body that is made of ~25% rock and ~75% water ice.">
+                  <Orbit w="4.47867" e="0.001" prograde="1" a="52704000" v="1.919862"/>
+                  <Terrain maxHeight="650" noise="5.5" texture="PlanetCrustSmoon.png" color="138,138,138" />
+               </Planet>
+               <Planet name="Titan Jr" gravity="1.352" radius="257500" mapColor="254,215,84" icon="Moon.png" launchEnabled="false" description="One of the largest satellites, and the only moon known to have a dense atmosphere.">
+                  <Orbit w="3.24057" e="0.0292" prograde="1" a="122183000.0" v="1.0"/>
                   <Terrain maxHeight="1500.0" minHeight="-800.0" noise="3.5" texture="PlanetCrustTitan.png" color="160,86,26" waterDensity="75">
                      <Ranges>
                         <Range startAngle="80" endAngle="110" minHeight="3200.0" maxHeight="3500.0" />
@@ -83,7 +87,7 @@
                   </Terrain>
                   <Atmosphere height="215000" surfacePressure="1.46" graphicType="8" />
                </Planet>
-            </Children>            
+            </Children>
          </Planet>
          <Planet name="Smuranus" gravity="8.870000" radius="2536200.0" mapColor="213,213,213" icon="Uranus.png" description="This gas giant is the coldest planet in the Smolar System, with a record temperature of -224 Celsius (-371 Fahrenheit).">
             <Orbit w="1.684941" e="0.047168" prograde="1" a="287097222000.0" v="-2.839185"/>
