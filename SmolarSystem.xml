@@ -1,3 +1,27 @@
+<!-- 
+	PLANET
+		radius : 10% (meters)
+	ORBIT
+		w : Argument of Periapsis (radians)
+		e : Eccentricity
+		prograde : 1 for True (counter-clockwise) 0 for False (clockwise)
+		a : Semi-major axis 10% (meters)
+		v : True anomaly (radians)
+	ATMOSPHERE
+		height : Scale Height * 8.980082 (meters)
+		surfacePressure : (bars)
+		graphicType : spritesheet graphic value
+		2560x1440
+		2048x1152
+		
+	To clarify the rather broad definition of atmospheric height, we will use the approximate height where aerocapturing can occur
+	for any and all possible planets and satellites. This is roughly determined by where the atmospheric density is 10^-3.9.  
+	Source: Page 4 of http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20070032693.pdf
+	
+	Why 8.980082? Via equation: -ln(10^-3.9)
+	Not a rocket scientist, and basically trying to learn as I go. Not entirely sure how correct it is to use that equation times scale height.
+	It seems to generally result in the expected atmospheric heights. I'm open to further insight.
+-->
 <SolarSystem 
   xmlns="http://jundroo.com/simplerockets/solarsystem.xsd"
   name="Smolar System" 
@@ -16,7 +40,7 @@
                   <Range startAngle="85.0" endAngle="87.0" minHeight="4000.0" maxHeight="4500.0" />
                </Ranges>
             </Terrain>
-            <Atmosphere height="250000" surfacePressure="93.0" graphicType="3" />
+            <Atmosphere height="142783" surfacePressure="92.0" graphicType="3" />
          </Planet>
          <Planet name="Smearth" gravity="9.798000" radius="637100.0" mapColor="103,157,255" icon="Earth.png" description="A smaller version of Earth. It is 10% the size of Earth, but it has the same surface gravity and atmospheric pressure.">
             <Orbit w="1.993303" e="0.016710" prograde="1" a="14959788700.0" v="-3.013170"/>
@@ -28,7 +52,8 @@
                   <Range startAngle="91" endAngle="93" minHeight="4000.0" maxHeight="8000.0" />
                </Ranges>
             </Terrain>
-            <Atmosphere height="70000" surfacePressure="1.0" graphicType="1" />
+            <Atmosphere height="76331" surfacePressure="1.0" graphicType="1" />
+			
             <Children>
                <Planet name="Smoon" gravity="1.620000" radius="173710.0" mapColor="213,213,213" icon="Moon.png" description="Smearth's only natural satellite. The extremely low gravity makes this a fun place to launch from.">
                   <Orbit w="1.993303" e="0.054900" prograde="1" a="38440000.0" v="-2.138368"/>
@@ -43,12 +68,12 @@
          <Planet name="Smars" gravity="3.710000" radius="338950.0" mapColor="208,35,35" icon="Mars.png" description="The Red Planet is the 2nd smallest in the Smolar System. It has an extremely thin atmosphere, with only about 1% the surface pressure of what you find on Smearth.">
             <Orbit w="5.001014" e="0.093412" prograde="1" a="22793663700.0" v="1.734006"/>
             <Terrain maxHeight="1250.0" noise="2.0" texture="PlanetCrustSmars.png" color="112,28,2" />
-            <Atmosphere height="95000.0" surfacePressure="0.0059405" graphicType="2" />
+            <Atmosphere height="99679.0" surfacePressure="0.00636" graphicType="2" />
          </Planet>
          <Planet name="Smupiter" gravity="24.790000" radius="6991100.0" mapColor="230,116,45" icon="Jupiter.png" description="The largest planet in the Smolar System. It is a gas giant, however we are pretending there is a surface to launch from!">
             <Orbit w="4.800807" e="0.048393" prograde="1" a="77841202700.0" v="1.324001"/>
             <Terrain maxHeight="5000.0" noise="2.5" texture="PlanetCrustSmupiter.png" color="67,53,41" />
-            <Atmosphere height="125000.0" surfacePressure="1.0" graphicType="4" />
+            <Atmosphere height="242462.0" surfacePressure="1.0" graphicType="4" />
             <Children>
 				<Planet name="Io Jr" gravity="1.8" radius="182160" mapColor="241,221,86" icon="Moon.png" launchEnabled="false" description="Beware of volcanic plumes of sulfar and sulfur dioxide.">
                   <Orbit w="0.2" e="0.004" prograde="1" a="42160000.0" v="2.0"/>
@@ -85,19 +110,19 @@
                         <Range startAngle="135" endAngle="180" minHeight="-1000.0" maxHeight="-500.0" />
                      </Ranges>
                   </Terrain>
-                  <Atmosphere height="215000" surfacePressure="1.46" graphicType="8" />
+                  <Atmosphere height="353815" surfacePressure="1.467" graphicType="8" />
                </Planet>
             </Children>
          </Planet>
          <Planet name="Smuranus" gravity="8.870000" radius="2536200.0" mapColor="213,213,213" icon="Uranus.png" description="This gas giant is the coldest planet in the Smolar System, with a record temperature of -224 Celsius (-371 Fahrenheit).">
             <Orbit w="1.684941" e="0.047168" prograde="1" a="287097222000.0" v="-2.839185"/>
             <Terrain maxHeight="2500.0" noise="7.5" texture="PlanetCrustSmuranus.png" color="26,43,52" />
-            <Atmosphere height="125000.0" surfacePressure="1.0" graphicType="5" />
+            <Atmosphere height="248748.0" surfacePressure="1.0" graphicType="5" />
          </Planet>
          <Planet name="Smeptune" gravity="11.150000" radius="2462200" mapColor="213,213,213" icon="Neptune.png" description="The farthest planet in the Smolar System is another gas giant. It is the 4th largest planet, however it is the most dense. This is why its surface gravity is so high, only exceeded by Smupiter.">
             <Orbit w="4.636412" e="0.008586" prograde="1" a="449825291000.0" v="-1.313185"/>
             <Terrain maxHeight="1500.0" noise="7.5" texture="PlanetCrustSmeptune.png" color="7,70,101" />
-            <Atmosphere height="88022.0" surfacePressure="1.0" graphicType="6" />
+            <Atmosphere height="176908.0" surfacePressure="1.0" graphicType="6" />
          </Planet>
       </Children>
    </Planet>
