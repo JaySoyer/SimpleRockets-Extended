@@ -11,8 +11,6 @@
 		height : Scale Height * 8.980082 (meters)
 		surfacePressure : (bars)
 		graphicType : spritesheet graphic value
-		2560x1440
-		2048x1152
 		
 	To clarify the rather broad definition of atmospheric height, we will use the approximate height where aerocapturing can occur
 	for any and all possible planets and satellites. This is roughly determined by where the atmospheric density is 10^-3.9.  
