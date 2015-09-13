@@ -124,6 +124,17 @@
             <Terrain maxHeight="1500.0" noise="7.5" texture="PlanetCrustSmeptune.png" color="7,70,101" />
             <Atmosphere height="176908.0" surfacePressure="1.0" graphicType="6" />
          </Planet>
+		 <Planet name="Spluto" gravity="0.620" radius="118500.0" mapColor="200,168,137" icon="Mercury.png" description="The dwarf planet that tried to be a regular planet.">
+			<Orbit w="1.985783" e="0.248808" prograde="1" a="590637627000.0" v="1.051"/>
+			<Terrain maxHeight="750.0" noise="5.5" texture="PlanetCrustSmaturn.png" color="66,41,27" />
+			<Atmosphere height="538805.0" surfacePressure="0.00001" graphicType="9" />
+			<Children>
+				<Planet name="Charon Jr" gravity="0.29" radius="60400" mapColor="194,174,160" icon="Moon.png" launchEnabled="false" description="Little over half the size of Spluto.">
+					<Orbit w="2.88072" e="0.0" prograde="1" a="1957100.0" v="1.0"/>
+					<Terrain maxHeight="625.0" noise="5" texture="PlanetCrustSmoon.png" color="140,120,104" />
+				</Planet>
+			</Children>
+		 </Planet>
       </Children>
    </Planet>
 </SolarSystem>
