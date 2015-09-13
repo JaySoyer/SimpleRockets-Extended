@@ -118,11 +118,31 @@
             <Orbit w="1.684941" e="0.047168" prograde="1" a="287097222000.0" v="-2.839185"/>
             <Terrain maxHeight="2500.0" noise="7.5" texture="PlanetCrustSmuranus.png" color="26,43,52" />
             <Atmosphere height="248748.0" surfacePressure="1.0" graphicType="5" />
+			<Children>
+			   <Planet name="Titania Jr" gravity="0.38" radius="78890" mapColor="201,189,177" icon="Moon.png" launchEnabled="false" description="Smuranus's largest satellite. It is thought to have fromed from an accretion disc.">
+                  <Orbit w="4.964" e="0.0022" prograde="1" a="43591000" v="1.919862"/>
+                  <Terrain maxHeight="1000.0" minHeight="-1000" noise="3.0" texture="PlanetCrustSmoon.png" color="160,149,145" />
+               </Planet>
+			   <Planet name="Oberon Jr" gravity="0.348" radius="76140.3" mapColor="181,174,158" icon="Moon.png" launchEnabled="false" description="Estimated to have ~50% rock and ~50% water ice. It's the reddest among the major Smuranian moons.">
+                  <Orbit w="1.822" e="0.0008" prograde="1" a="58352000" v="1.919862"/>
+                  <Terrain maxHeight="1200.0" minHeight="-1200" noise="2.5" texture="PlanetCrustSmars.png" color="140,113,118" />
+               </Planet>
+			</Children>
          </Planet>
          <Planet name="Smeptune" gravity="11.150000" radius="2462200" mapColor="213,213,213" icon="Neptune.png" description="The farthest planet in the Smolar System is another gas giant. It is the 4th largest planet, however it is the most dense. This is why its surface gravity is so high, only exceeded by Smupiter.">
             <Orbit w="4.636412" e="0.008586" prograde="1" a="449825291000.0" v="-1.313185"/>
             <Terrain maxHeight="1500.0" noise="7.5" texture="PlanetCrustSmeptune.png" color="7,70,101" />
             <Atmosphere height="176908.0" surfacePressure="1.0" graphicType="6" />
+			<Children>
+			   <Planet name="Proteus Jr" gravity="0.07" radius="21000" mapColor="145,145,145" icon="Moon.png" launchEnabled="false" description="Discovered in 1989. It's largest crater is more then 200 km in diameter.">
+                  <Orbit w="5.26576" e="0.0004" prograde="1" a="11764700.0" v="1.919862"/>
+                  <Terrain maxHeight="1000.0" minHeight="-10000" noise="10.0" texture="PlanetCrustSmoon.png" color="145,145,145" />
+               </Planet>
+               <Planet name="Triton Jr" gravity="0.779" radius="135340" mapColor="150,143,137" icon="Moon.png" launchEnabled="false" description="Smeptune's largest satellite and only large moon with a retrograde orbit.">
+                  <Orbit w="6.00474" e="0.000016" prograde="0" a="35476000.0" v="4.974188"/>
+                  <Terrain maxHeight="1000.0" noise="0.5" texture="PlanetCrustSmupiter.png" color="150,143,137" />
+               </Planet>
+            </Children>
          </Planet>
 		 <Planet name="Spluto" gravity="0.620" radius="118500.0" mapColor="200,168,137" icon="Mercury.png" description="The dwarf planet that tried to be a regular planet.">
 			<Orbit w="1.985783" e="0.248808" prograde="1" a="590637627000.0" v="1.051"/>
