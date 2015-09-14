@@ -8,7 +8,7 @@
 		a : Semi-major axis 10% (meters)
 		v : True anomaly (radians)
 	ATMOSPHERE
-		height : Scale Height * 8.980082 (meters)
+		height : -ln ((10^-3.9)/ Surface Pressure) * scale height
 		surfacePressure : (bars)
 		graphicType : spritesheet graphic value
 		
@@ -16,9 +16,8 @@
 	for any and all possible planets and satellites. This is roughly determined by where the atmospheric density is 10^-3.9.  
 	Source: Page 4 of http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20070032693.pdf
 	
-	Why 8.980082? Via equation: -ln(10^-3.9)
-	Not a rocket scientist, and basically trying to learn as I go. Not entirely sure how correct it is to use that equation times scale height.
-	It seems to generally result in the expected atmospheric heights. I'm open to further insight.
+	The algorithm used was pulled from Kerbal Space Program:
+	http://wiki.kerbalspaceprogram.com/wiki/Atmosphere#Atmospheric_height
 -->
 <SolarSystem 
   xmlns="http://jundroo.com/simplerockets/solarsystem.xsd"
@@ -38,7 +37,7 @@
                   <Range startAngle="85.0" endAngle="87.0" minHeight="4000.0" maxHeight="4500.0" />
                </Ranges>
             </Terrain>
-            <Atmosphere height="142783" surfacePressure="92.0" graphicType="3" />
+            <Atmosphere height="214680" surfacePressure="92.0" graphicType="3" />	<!-- Scale Height 15.9km -->
          </Planet>
          <Planet name="Smearth" gravity="9.798000" radius="637100.0" mapColor="103,157,255" icon="Earth.png" description="A smaller version of Earth. It is 10% the size of Earth, but it has the same surface gravity and atmospheric pressure.">
             <Orbit w="1.993303" e="0.016710" prograde="1" a="14959788700.0" v="-3.013170"/>
@@ -50,7 +49,7 @@
                   <Range startAngle="91" endAngle="93" minHeight="4000.0" maxHeight="8000.0" />
                </Ranges>
             </Terrain>
-            <Atmosphere height="76331" surfacePressure="1.0" graphicType="1" />
+            <Atmosphere height="76331" surfacePressure="1.0" graphicType="1" />	<!-- Scale Height 8.5km-->
 			
             <Children>
                <Planet name="Smoon" gravity="1.620000" radius="173710.0" mapColor="213,213,213" icon="Moon.png" description="Smearth's only natural satellite. The extremely low gravity makes this a fun place to launch from.">
@@ -66,12 +65,12 @@
          <Planet name="Smars" gravity="3.710000" radius="338950.0" mapColor="208,35,35" icon="Mars.png" description="The Red Planet is the 2nd smallest in the Smolar System. It has an extremely thin atmosphere, with only about 1% the surface pressure of what you find on Smearth.">
             <Orbit w="5.001014" e="0.093412" prograde="1" a="22793663700.0" v="1.734006"/>
             <Terrain maxHeight="1250.0" noise="2.0" texture="PlanetCrustSmars.png" color="112,28,2" />
-            <Atmosphere height="99679.0" surfacePressure="0.00636" graphicType="2" />
+            <Atmosphere height="43538.0" surfacePressure="0.00636" graphicType="2" />	<!-- Scale Height 11.1km-->
          </Planet>
          <Planet name="Smupiter" gravity="24.790000" radius="6991100.0" mapColor="230,116,45" icon="Jupiter.png" description="The largest planet in the Smolar System. It is a gas giant, however we are pretending there is a surface to launch from!">
             <Orbit w="4.800807" e="0.048393" prograde="1" a="77841202700.0" v="1.324001"/>
             <Terrain maxHeight="5000.0" noise="2.5" texture="PlanetCrustSmupiter.png" color="67,53,41" />
-            <Atmosphere height="242462.0" surfacePressure="1.0" graphicType="4" />
+            <Atmosphere height="242462.0" surfacePressure="1.0" graphicType="4" />	<!-- Scale Height 27km-->
             <Children>
 				<Planet name="Io Jr" gravity="1.8" radius="182160" mapColor="241,221,86" icon="Moon.png" launchEnabled="false" description="Beware of volcanic plumes of sulfar and sulfur dioxide.">
                   <Orbit w="0.2" e="0.004" prograde="1" a="42160000.0" v="2.0"/>
@@ -94,7 +93,7 @@
          <Planet name="Smaturn" gravity="10.440000" radius="5823200.0" mapColor="213,213,213" icon="Saturn.png" description="It is the 2nd largest planet and because of its rings, it is considered the most beautiful planet in the Smolar System. It is also a gas giant, but once again we are pretending there is a surface.">
             <Orbit w="5.864533" e="0.054151" prograde="1" a="142672541000.0" v="2.222000"/>
             <Terrain maxHeight="2500.0" noise="2.5" texture="PlanetCrustSmaturn.png" color="64,55,14" />
-            <Atmosphere height="534315.0" surfacePressure="1.0" graphicType="7" />
+            <Atmosphere height="534315.0" surfacePressure="1.0" graphicType="7" />	<!-- Scale Height 59.5km-->
             <Children>
 				<Planet name="Rhea Jr" gravity="0.265" radius="76333.3" mapColor="206,206,206" icon="Moon.png" launchEnabled="false" description="An icy body that is made of ~25% rock and ~75% water ice.">
                   <Orbit w="4.47867" e="0.001" prograde="1" a="52704000" v="1.919862"/>
@@ -108,14 +107,14 @@
                         <Range startAngle="135" endAngle="180" minHeight="-1000.0" maxHeight="-500.0" />
                      </Ranges>
                   </Terrain>
-                  <Atmosphere height="353815" surfacePressure="1.467" graphicType="8" />
+                  <Atmosphere height="368914" surfacePressure="1.467" graphicType="8" />	<!-- Scale Height 39.4km (Estimated as twice of Smeptune. Need better value here)-->
                </Planet>
             </Children>
          </Planet>
          <Planet name="Smuranus" gravity="8.870000" radius="2536200.0" mapColor="213,213,213" icon="Uranus.png" description="This gas giant is the coldest planet in the Smolar System, with a record temperature of -224 Celsius (-371 Fahrenheit).">
             <Orbit w="1.684941" e="0.047168" prograde="1" a="287097222000.0" v="-2.839185"/>
             <Terrain maxHeight="2500.0" noise="7.5" texture="PlanetCrustSmuranus.png" color="26,43,52" />
-            <Atmosphere height="248748.0" surfacePressure="1.0" graphicType="5" />
+            <Atmosphere height="248748.0" surfacePressure="1.0" graphicType="5" />	<!-- Scale Height 27.7km-->
 			<Children>
 			   <Planet name="Titania Jr" gravity="0.38" radius="78890" mapColor="201,189,177" icon="Moon.png" launchEnabled="false" description="Smuranus's largest satellite. It is thought to have fromed from an accretion disc.">
                   <Orbit w="4.964" e="0.0022" prograde="1" a="43591000" v="1.919862"/>
@@ -130,7 +129,7 @@
          <Planet name="Smeptune" gravity="11.150000" radius="2462200" mapColor="213,213,213" icon="Neptune.png" description="The farthest planet in the Smolar System is another gas giant. It is the 4th largest planet, however it is the most dense. This is why its surface gravity is so high, only exceeded by Smupiter.">
             <Orbit w="4.636412" e="0.008586" prograde="1" a="449825291000.0" v="-1.313185"/>
             <Terrain maxHeight="1500.0" noise="7.5" texture="PlanetCrustSmeptune.png" color="7,70,101" />
-            <Atmosphere height="176908.0" surfacePressure="1.0" graphicType="6" />
+            <Atmosphere height="176908.0" surfacePressure="1.0" graphicType="6" />	<!-- Scale Height 19.7km (middle of range defined from NASA factsheet)-->
 			<Children>
 			   <Planet name="Proteus Jr" gravity="0.07" radius="21000" mapColor="145,145,145" icon="Moon.png" launchEnabled="false" description="Discovered in 1989. It's largest crater is more then 200 km in diameter.">
                   <Orbit w="5.26576" e="0.0004" prograde="1" a="11764700.0" v="1.919862"/>
@@ -145,7 +144,7 @@
 		 <Planet name="Spluto" gravity="0.620" radius="118500.0" mapColor="200,168,137" icon="Mercury.png" description="The dwarf planet that tried to be a regular planet.">
 			<Orbit w="1.985783" e="0.248808" prograde="1" a="590637627000.0" v="1.051"/>
 			<Terrain maxHeight="750.0" noise="5.5" texture="PlanetCrustSmaturn.png" color="66,41,27" />
-			<Atmosphere height="538805.0" surfacePressure="0.00001" graphicType="9" />
+			<Atmosphere height="0.0" surfacePressure="0.00001" graphicType="9" />	<!-- Scale Height 60km-->
 			<Children>
 				<Planet name="Charon Jr" gravity="0.29" radius="60400" mapColor="194,174,160" icon="Moon.png" launchEnabled="false" description="Little over half the size of Spluto.">
 					<Orbit w="2.88072" e="0.0" prograde="1" a="1957100.0" v="1.0"/>
