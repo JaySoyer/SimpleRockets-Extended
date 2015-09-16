@@ -17,7 +17,7 @@ Not entirely sure how the original atmospheric heights were determined. Looks li
 ### Correcting Planetary Parameters
 More like updating all Smolar System parameters from the same sources. While many of the real world values are not pinpoint exact, via standarizing where the info is pulled from, my hope is to come up with a more "common" realistic portrayal. It works as such:
 
-- First, Pull all information from [NASA factsheet](http://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html).
+- First, pull all information from [NASA factsheet](http://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html).
 - Any missing information, pull from Wikipedia
 - If still missing information, pull from Wolfgram Alpha
 - Finally, if STILL missing information, pull from any legit source.
