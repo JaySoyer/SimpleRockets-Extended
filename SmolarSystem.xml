@@ -78,7 +78,7 @@
                </Planet>
 			   <Planet name="Europa Jr" gravity="1.31" radius="156080" mapColor="153,122,75" icon="Moon.png" launchEnabled="false" description="Smallest of the Galilean satellites. Hypothesized to have an ocean beneath it's ice crust.">
                   <Orbit w="0.1" e="0.0101" prograde="1" a="67090000.0" v="1.5"/>
-                  <Terrain maxHeight="17.0" noise="0.5" texture="PlanetCrustSmuranus.png" color="0,45,124" />
+                  <Terrain maxHeight="370.0" noise="0.5" texture="PlanetCrustSmuranus.png" color="0,45,124" />
                </Planet>
                <Planet name="Ganymede Jr" gravity="1.43" radius="263120" mapColor="111,101,92" icon="Moon.png" launchEnabled="false" description="The largest moon on the Smolar System and only moon to have a magnetosphere.">
                   <Orbit w="0.0" e="0.0015" prograde="1" a="107040000.0" v="0.5"/>
@@ -143,7 +143,7 @@
          </Planet>
 		 <Planet name="Spluto" gravity="0.620" radius="118500.0" mapColor="200,168,137" icon="Mercury.png" description="The dwarf planet that tried to be a regular planet.">
 			<Orbit w="1.985783" e="0.248808" prograde="1" a="590637627000.0" v="1.051"/>
-			<Terrain maxHeight="750.0" noise="5.5" texture="PlanetCrustSmaturn.png" color="66,41,27" />
+			<Terrain maxHeight="200.0" noise="5.5" texture="PlanetCrustSmaturn.png" color="66,41,27" />
 			<Atmosphere height="0.0" surfacePressure="0.00001" graphicType="9" />	<!-- Scale Height 60km-->
 			<Children>
 				<Planet name="Charon Jr" gravity="0.29" radius="60400" mapColor="194,174,160" icon="Moon.png" launchEnabled="false" description="Little over half the size of Spluto.">
