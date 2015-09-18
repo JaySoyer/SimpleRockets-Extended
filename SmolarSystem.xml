@@ -100,19 +100,19 @@
 				<Terrain maxHeight="2500.0" noise="2.5" texture="PlanetCrustSmaturn.png" color="64,55,14" />
 				<Atmosphere height="534315.0" surfacePressure="1.0" graphicType="7" />	<!-- Scale Height 59.5km-->
 				<Children>
-					<Planet name="Mimas Jr" gravity="0.064" radius="19866.7" mapColor="162,162,162" icon="Moon.png" launchEnabled="true" description="The smallest astronomical body that is known to be spherical due to self-gravitation.">
+					<Planet name="Mimas Jr" gravity="0.064" radius="19866.7" mapColor="162,162,162" icon="Moon.png" launchEnabled="false" description="The smallest astronomical body that is known to be spherical due to self-gravitation.">
 						<Orbit w="0.25049" e="0.0202" prograde="1" a="18552000" v="2"/>
 						<Terrain maxHeight="900" minHeight="-450.0" noise="10" texture="PlanetCrustSmoon.png" color="60,60,60" />
 					</Planet>
-					<Planet name="Enceladus Jr" gravity="0.114" radius="25200" mapColor="162,162,162" icon="Moon.png" launchEnabled="true" description="Ejecting plumes of water vapor that supplies material to Smaturn's E Ring.">
+					<Planet name="Enceladus Jr" gravity="0.114" radius="25200" mapColor="162,162,162" icon="Moon.png" launchEnabled="false" description="Ejecting plumes of water vapor that supplies material to Smaturn's E Ring.">
 						<Orbit w="3.69875" e="0.0045" prograde="1" a="23802000" v="2.5"/>
 						<Terrain maxHeight="600" noise="2.5" texture="PlanetCrustSmoon.png" color="60,60,60" />
 					</Planet>
-					<Planet name="Tethys Jr" gravity="0.147" radius="53066.7" mapColor="225,225,225" icon="Moon.png" launchEnabled="true" description="Small in size with a giant impact crater 450km in diameter. That's more then 2/5 of the real Tethys' diameter.">
+					<Planet name="Tethys Jr" gravity="0.147" radius="53066.7" mapColor="225,225,225" icon="Moon.png" launchEnabled="false" description="Small in size with a giant impact crater 450km in diameter. That's more then 2/5 of the real Tethys' diameter.">
 						<Orbit w="4.58751" e="0.0" prograde="1" a="29466000" v="1.9"/>
 						<Terrain maxHeight="750" minHeight="-750.0" noise="4" texture="PlanetCrustSmoon.png" color="58,58,58" />
 					</Planet>
-					<Planet name="Dione Jr" gravity="0.233" radius="56133.3" mapColor="211,211,211" icon="Moon.png" launchEnabled="true" description="A small satellite of Smaturn that shares it's orbit with two trojan moons.">
+					<Planet name="Dione Jr" gravity="0.233" radius="56133.3" mapColor="211,211,211" icon="Moon.png" launchEnabled="false" description="A small satellite of Smaturn that shares it's orbit with two trojan moons.">
 						<Orbit w="2.94646" e="0.0022" prograde="1" a="37740000" v="1.2"/>
 						<Terrain maxHeight="450" noise="2" texture="PlanetCrustSmoon.png" color="68,68,68" />
 					</Planet>
