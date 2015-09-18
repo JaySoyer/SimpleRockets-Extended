@@ -29,11 +29,11 @@ The following are the two ways to install for Windows.
 
 ### Via Cloning
 1. Clone this repo into the directory `C:\Users\{UserName}\Documents\Jundroo\SimpleRockets\mods`
-1. When loading SimpleRockets, you'll now of a mod section at the very bottom of the screen.
+1. When loading SimpleRockets, you'll now have a mod section at the very bottom of the screen.
 1. Within the mod section, you'll have the ability to (de)activate this mod...and any others.
 
 ### Via Downloading
 1. Click the download button on the right hand side of the screen...or [click here](https://github.com/JaySoyer/SimpleRockets-Extended/archive/master.zip).
 1. Extract the downloaded zip into the directory `C:\Users\{UserName}\Documents\Jundroo\SimpleRockets\mods`
-1. When loading SimpleRockets, you'll now of a mod section at the very bottom of the screen.
+1. When loading SimpleRockets, you'll now have a mod section at the very bottom of the screen.
 1. Within the mod section, you'll have the ability to (de)activate this mod...and any others.
