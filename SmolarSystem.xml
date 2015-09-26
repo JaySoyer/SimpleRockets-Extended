@@ -117,7 +117,7 @@
 						<Terrain maxHeight="450" noise="2" texture="PlanetCrustSmoon.png" color="68,68,68" />
 					</Planet>
 					<Planet name="Rhea Jr" gravity="0.265" radius="76333.3" mapColor="206,206,206" icon="Moon.png" launchEnabled="false" description="An icy body that is made of ~25% rock and ~75% water ice.">
-						<Orbit w="4.47867" e="0.001" prograde="1" a="52704000" v="1.919862"/>
+						<Orbit w="4.47867" e="0.001" prograde="1" a="52704000" v="1.6"/>
 						<Terrain maxHeight="650" noise="5.5" texture="PlanetCrustSmoon.png" color="138,138,138" />
 					</Planet>
 					<Planet name="Titan Jr" gravity="1.352" radius="257500" mapColor="254,215,84" icon="Moon.png" launchEnabled="false" description="One of the largest satellites, and the only moon known to have a dense atmosphere.">
@@ -130,7 +130,7 @@
 						</Terrain>
 						<Atmosphere height="368914" surfacePressure="1.467" graphicType="8" />	<!-- Scale Height 39.4km (Estimated as twice of Smeptune. Need better value here)-->
 					</Planet>
-					<Planet name="Iapetus Jr" gravity="0.224" radius="73466.7" mapColor="224,224,224" icon="Moon.png" launchEnabled="true" description="A two-tone moon like no other.">
+					<Planet name="Iapetus Jr" gravity="0.224" radius="73466.7" mapColor="224,224,224" icon="Moon.png" launchEnabled="false" description="A two-tone moon like no other.">
 						<Orbit w="4.81573" e="0.0283" prograde="1" a="356130000" v="1.5"/>
 						<Terrain maxHeight="800" noise="6" texture="PlanetCrustSmoon.png" color="81,81,81" />
 					</Planet>
@@ -143,11 +143,11 @@
 				<Atmosphere height="248748.0" surfacePressure="1.0" graphicType="5" />	<!-- Scale Height 27.7km-->
 				<Children>
 					<Planet name="Titania Jr" gravity="0.38" radius="78890" mapColor="201,189,177" icon="Moon.png" launchEnabled="false" description="Smuranus's largest satellite. It is thought to have fromed from an accretion disc.">
-						<Orbit w="4.964" e="0.0022" prograde="1" a="43591000" v="1.919862"/>
+						<Orbit w="4.964" e="0.0022" prograde="1" a="43591000" v="1"/>
 						<Terrain maxHeight="1000.0" minHeight="-1000" noise="3.0" texture="PlanetCrustSmoon.png" color="160,149,145" />
 					</Planet>
 					<Planet name="Oberon Jr" gravity="0.348" radius="76140.3" mapColor="181,174,158" icon="Moon.png" launchEnabled="false" description="Estimated to have ~50% rock and ~50% water ice. It's the reddest among the major Smuranian moons.">
-						<Orbit w="1.822" e="0.0008" prograde="1" a="58352000" v="1.919862"/>
+						<Orbit w="1.822" e="0.0008" prograde="1" a="58352000" v="2"/>
 						<Terrain maxHeight="1200.0" minHeight="-1200" noise="2.5" texture="PlanetCrustSmars.png" color="140,113,118" />
 					</Planet>
 				</Children>
