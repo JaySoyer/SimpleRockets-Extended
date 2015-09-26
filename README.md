@@ -10,6 +10,7 @@ If the object is large enough to be spherical, it'll be in the game.  This inclu
 - Titania Jr, Oberon Jr
 - Proteus Jr, Triton Jr
 - Spluto, Charon Jr
+- All spherical satellites of Smaturn 
 
 ### Atmospheric Heights
 Not entirely sure how the original atmospheric heights were determined. Looks like it was a mix of real life data that was changed for gameplay reasons.  While many atmospheric heights are quite variable, this mod attempts to "standarize" height determination as best as possible and forego gameplay considerations.  Specifically atmospheric heights are now based on real life scale heights and the air density where areocapture is generally possible (~10^-3.9).  Of course this is all rough estimates, but the goal is to get some form of consistency.
